@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package moda.pb;
 
-option go_package = "./pb";
+option go_package = "moda/pb";
 
 message Msg {
   int64 id = 1;

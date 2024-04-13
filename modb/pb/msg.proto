@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package modb.pb;
 
-option go_package = "./pb";
+option go_package = "modb/pb";
 
 message Msg {
   int64 id = 1;

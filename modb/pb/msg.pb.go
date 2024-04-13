@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.33.0-devel
 // 	protoc        v5.26.1
-// source: msg.proto
+// source: modb/pb/msg.proto
 
 package pb
 
@@ -31,7 +31,7 @@ type Msg struct {
 func (x *Msg) Reset() {
 	*x = Msg{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_msg_proto_msgTypes[0]
+		mi := &file_modb_pb_msg_proto_msgTypes[0]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -44,7 +44,7 @@ func (x *Msg) String() string {
 func (*Msg) ProtoMessage() {}
 
 func (x *Msg) ProtoReflect() protoreflect.Message {
-	mi := &file_msg_proto_msgTypes[0]
+	mi := &file_modb_pb_msg_proto_msgTypes[0]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -57,7 +57,7 @@ func (x *Msg) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Msg.ProtoReflect.Descriptor instead.
 func (*Msg) Descriptor() ([]byte, []int) {
-	return file_msg_proto_rawDescGZIP(), []int{0}
+	return file_modb_pb_msg_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Msg) GetId() int64 {
@@ -67,33 +67,33 @@ func (x *Msg) GetId() int64 {
 	return 0
 }
 
-var File_msg_proto protoreflect.FileDescriptor
+var File_modb_pb_msg_proto protoreflect.FileDescriptor
 
-var file_msg_proto_rawDesc = []byte{
+var file_modb_pb_msg_proto_rawDesc = []byte{
 	0x0a, 0x11, 0x6d, 0x6f, 0x64, 0x62, 0x2f, 0x70, 0x62, 0x2f, 0x6d, 0x73, 0x67, 0x2e, 0x70, 0x72,
 	0x6f, 0x74, 0x6f, 0x12, 0x07, 0x6d, 0x6f, 0x64, 0x62, 0x2e, 0x70, 0x62, 0x22, 0x15, 0x0a, 0x03,
 	0x4d, 0x73, 0x67, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x03, 0x52,
-	0x02, 0x69, 0x64, 0x42, 0x06, 0x5a, 0x04, 0x2e, 0x2f, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x33,
+	0x02, 0x69, 0x64, 0x42, 0x09, 0x5a, 0x07, 0x6d, 0x6f, 0x64, 0x62, 0x2f, 0x70, 0x62, 0x62, 0x06,
+	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
-	file_msg_proto_rawDescOnce sync.Once
-	file_msg_proto_rawDescData = file_msg_proto_rawDesc
+	file_modb_pb_msg_proto_rawDescOnce sync.Once
+	file_modb_pb_msg_proto_rawDescData = file_modb_pb_msg_proto_rawDesc
 )
 
-func file_msg_proto_rawDescGZIP() []byte {
-	file_msg_proto_rawDescOnce.Do(func() {
-		file_msg_proto_rawDescData = protoimpl.X.CompressGZIP(file_msg_proto_rawDescData)
+func file_modb_pb_msg_proto_rawDescGZIP() []byte {
+	file_modb_pb_msg_proto_rawDescOnce.Do(func() {
+		file_modb_pb_msg_proto_rawDescData = protoimpl.X.CompressGZIP(file_modb_pb_msg_proto_rawDescData)
 	})
-	return file_msg_proto_rawDescData
+	return file_modb_pb_msg_proto_rawDescData
 }
 
-var file_msg_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_msg_proto_goTypes = []interface{}{
+var file_modb_pb_msg_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_modb_pb_msg_proto_goTypes = []interface{}{
 	(*Msg)(nil), // 0: modb.pb.Msg
 }
-var file_msg_proto_depIdxs = []int32{
+var file_modb_pb_msg_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -101,13 +101,13 @@ var file_msg_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_msg_proto_init() }
-func file_msg_proto_init() {
-	if File_msg_proto != nil {
+func init() { file_modb_pb_msg_proto_init() }
+func file_modb_pb_msg_proto_init() {
+	if File_modb_pb_msg_proto != nil {
 		return
 	}
 	if !protoimpl.UnsafeEnabled {
-		file_msg_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
+		file_modb_pb_msg_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Msg); i {
 			case 0:
 				return &v.state
@@ -124,18 +124,18 @@ func file_msg_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: file_msg_proto_rawDesc,
+			RawDescriptor: file_modb_pb_msg_proto_rawDesc,
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_msg_proto_goTypes,
-		DependencyIndexes: file_msg_proto_depIdxs,
-		MessageInfos:      file_msg_proto_msgTypes,
+		GoTypes:           file_modb_pb_msg_proto_goTypes,
+		DependencyIndexes: file_modb_pb_msg_proto_depIdxs,
+		MessageInfos:      file_modb_pb_msg_proto_msgTypes,
 	}.Build()
-	File_msg_proto = out.File
-	file_msg_proto_rawDesc = nil
-	file_msg_proto_goTypes = nil
-	file_msg_proto_depIdxs = nil
+	File_modb_pb_msg_proto = out.File
+	file_modb_pb_msg_proto_rawDesc = nil
+	file_modb_pb_msg_proto_goTypes = nil
+	file_modb_pb_msg_proto_depIdxs = nil
 }
